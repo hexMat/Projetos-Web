@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>VIRTUAL-IF</title>
+    <link rel="shortcut icon" sizes="16x16" href="/imagem/favicon-16x16.png" />
+</head>
+
+<body>
+
+    <!-- INÍCIO DO MENU SUPERIOR -->
+    <nav>
+
+        <div class="topnav" style="justify-content:space-between ; flex-wrap: wrap;">
+            <div class="ico-main">
+
+                <a class="icons" href="#email" class="fas fa-envelope">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                    </svg>
+                </a>
+                <a class="icons" href="#biblioteca" class="fas fa-book">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-book" viewBox="0 0 16 16">
+                        <path
+                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                    </svg>
+                </a>
+                <a class="icons" href="#senha-user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+                    </svg>
+                </a>
+                <a class="icons" href="#notify">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="logo-virtual-if">
+                <a href="#home">
+                    <picture>
+                        <source media="(max-width: 575.98px)" srcset="/imagem/logo_virtualif_mini.svg">
+                        <source media="(max-width: 767.98px)" srcset="/imagem/logo_virtualif_mini.svg">
+                        <img src="/imagem/logotipo-virtualif-compacto.svg" style="max-height: 80px; "
+                            alt="image not found">
+                    </picture>
+                </a>
+            </div>
+
+
+            <div style="display: flex; flex-direction: row; align-items: center;">
+                <div class="user"  style="order: 0;">
+                    <a href="#user" style="display: inline-flex;align-items: center;">
+                        <div style="display: flex;flex-direction: column; align-items: flex-end;">
+                            <p>Bem Vindo</p>
+                            <span>
+                                <p><strong>MATEUS ROSA MACHADO JUNIOR</strong></p>
+                            </span>
+                        </div>
+                        <div>
+                            <img class="foto-usuario" src="/imagem/carregarUsuario.png" alt="" style="max-width:80px ;">
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#exit" class="icons" style="order: 1;">>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- FIM DO MENU SUPERIOR -->
+    </nav>
+
+
+    <!-- INÍCIO DO CAROUSEL -->
+    <div class="container" style="padding-top: 15px; padding-bottom: 15px;">
+        <div id="meuCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#meuCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#meuCarousel" data-slide-to="1"></li>
+                <li data-target="#meuCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img style="margin: 0 auto;" src="/imagem/loader_banner.png" alt="">
+                </div>
+
+                <div class="item">
+                    <img style="margin: 0 auto;" src="/imagem/loader_banner (1).png" alt="">
+                </div>
+
+                <div class="item">
+                    <img style="margin: 0 auto;" src="/imagem/loader_banner (2).png" alt="">
+                </div>
+            </div>
+            <a href="#meuCarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a href="#meuCarousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+    <!-- FIM DO CAROUSEL -->
+
+    <!-- SISTEMAS -->
+    <div class="div_sistemas">
+        <!-- ASSISTÊNCIA ESTUDANTIL -->
+        <div style="background-color: #64B2B2">
+            <img src="/imagem/icone_logoae.png" alt="">
+            <div>
+                <p><strong>AE</strong></p>
+                <span>Assistência Estudantil</span>
+            </div>
+        </div>
+
+        <!-- BANCO ESTÁGIO -->
+        <div style="background-color: #CA2C2D;">
+            <img src="/imagem/icone_icone_bc_189x70.png" alt="">
+
+            <div>
+                <p><strong>BEEC</strong></p>
+                <span>Banco Estágio, Emprego e Currículo </span>
+            </div>
+        </div>
+
+        <!-- DISCOR VIRTUAL -->
+        <div style="background-color: #CA2C2D;">
+            <img src="/imagem/icone_dv2.png" alt="">
+
+            <div>
+                <p><strong>Disco Virtual</strong></p>
+                <span>Disco Virtual Acadêmico</span>
+            </div>
+        </div>
+
+        <!-- DOCUMENTOS OFICIAIS -->
+        <div style="background-color: #E28400;">
+            <img src="/imagem/mad_docs.png" alt="">
+
+            <div>
+                <p><strong>DOC S</strong></p>
+                <span>Documentos Oficiais</span>
+            </div>
+        </div>
+
+        <!-- ESTUDANTE -->
+        <div style="background-color: #CA2C2D;">
+            <img src="/imagem/aluno (1).png" alt="">
+
+            <div>
+                <p><strong>Estudante</strong></p>
+                <span>Antigo módulo Aluno</span>
+            </div>
+        </div>
+
+        <!-- EVENTOS -->
+        <div style="background-color: #64B2B2;">
+            <img src="/imagem/icone_icone_eventos.png" alt="">
+
+            <div>
+                <p><strong>Eventos</strong></p>
+                <span>Eventos</span>
+            </div>
+        </div>
+
+        <!-- GESTÃO DE SERVIÇOS -->
+        <div style="background-color: #2E7EA3;">
+            <img src="/imagem/icone_gss.png" alt="">
+
+            <div>
+                <p><strong>GSS</strong></p>
+                <span>Gestão de Serviços e Solicitações</span>
+            </div>
+        </div>
+
+        <!-- MURAL DE RECADOS -->
+        <div style="background-color: #CA2C2D;">
+            <img src="/imagem/mural-de-recados-2.png" alt="">
+
+            <div>
+                <p><strong>Mural</strong></p>
+                <span>Mural de Recados</span>
+            </div>
+        </div>
+
+        <!-- NOTIFICAÇÕES -->
+        <div style="background-color: #2E7EA3;">
+            <img src="/imagem/notificacoes.png" alt="">
+
+            <div>
+                <p><strong>NOT</strong></p>
+                <span>Notificações</span>
+            </div>
+        </div>
+
+        <!-- QUADRO INFORMATIVO -->
+        <div style="background-color: #CA2C2D;">
+            <img src="/imagem/icone_qi.png" alt="">
+
+            <div>
+                <p><strong>QI</strong></p>
+                <span>Quadro Informativo</span>
+            </div>
+        </div>
+
+        <!-- BIBLIOTECA SOPHIA -->
+        <div style="background-color: #CA2C2D;">
+            <img src="/imagem/biblioteca-sophia.png" alt="">
+
+            <div>
+                <p><strong>Sophia</strong></p>
+                <span>Biblioteca Sophia</span>
+            </div>
+        </div>
+
+        <!-- VOTAÇÃO HELIO -->
+        <div style="background-color: #818F96;">
+            <img src="/imagem/icone_vot.png" alt="">
+
+            <div>
+                <p><strong>VOT</strong></p>
+                <span>Votação Helios</span>
+            </div>
+        </div>
+    </div>
+    <!-- FIM SISTEMAS -->
+
+    <div>
+        <img src="/imagem/logotipo-iftm-completo.png" alt="">
+        <img style="float: right;" src="/imagem/logotipo-dtic.png" alt="">
+    </div>
+</body>
+
+</html>
